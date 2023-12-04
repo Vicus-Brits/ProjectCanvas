@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Project Viewer</a>
+      </div>
+    </nav>
+
+    <!-- file select button -->
+    <div class="row mt-3">
+      <div class="col-auto">
+        <input type="file" id="projectdata" />
+      </div>
+    </div>
+
+    <!-- Data Table-->
+    <div class="row mt-3">
+      <div class="col-12" id="processedDataTable"></div>
+    </div>
+
+    <!-- Graph Canvas -->
+    <div class="row">
+      <div class="col-12" id="canvasContainer">
+        <canvas id="canvasBar"></canvas>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

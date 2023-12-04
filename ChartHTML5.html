@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Horizontal Stacked Bar Chart</title>
+    <style>
+      #processedDataTable {
+        font-size: 10.5px;
+        overflow-x: auto;
+      }
+      #canvasContainer {
+        width: 70%;
+        margin: 0 auto;
+      }
+      canvas {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- File Input and Dropdown -->
+    <div class="row mt-3">
+      <div class="col-auto">
+        <input type="file" id="input-excel" />
+      </div>
+      <div class="col-auto">
+        <label for="indicator1Dropdown">Indicator1:</label>
+        <select id="indicator1Dropdown" multiple></select>
+      </div>
+    </div>
+    <br />
+    <!-- Canvas Container -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" id="canvasContainer">
+          <canvas id="canvasBar"></canvas>
+        </div>
+      </div>
+      <!-- Processed Data Table -->
+      <div class="row mt-3">
+        <div class="col-12" id="processedDataTable">
+          <!-- Data Table will be inserted here -->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
